@@ -48,7 +48,7 @@ const View = (props) => {
     const searchParams = new URLSearchParams(location.search);
     searchParams.set(key, value);
 
-    history.push({
+    history.replace({
       hash: location.hash,
       pathname: location.pathname,
       search: searchParams.toString(),
